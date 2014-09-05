@@ -1,0 +1,5 @@
+<% if @tarea.terminada %>
+  $('#edit_tarea_<%= @tarea.id %>').appendTo('#completas');
+<% else %>
+  $('#edit_tarea_<%= @tarea.id %>').appendTo('#tareas');
+<% end %>

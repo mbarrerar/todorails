@@ -1,0 +1,9 @@
+<div id="nueva_tarea">
+<%= form_for @tarea,remote: true do |f| %>
+  <div class="field">
+    <%= f.label :nombre %><br>
+    <%= f.text_field :nombre %>
+  </div>
+    <%= f.submit 'Save', data: { disable_with: 'Cargando...' }   %>
+<% end %>
+</div>

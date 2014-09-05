@@ -1,0 +1,7 @@
+<%= form_for tarea , remote: true do |f| %>
+  <div id="tareas_completas">
+  <%= f.check_box :terminada %>
+   <strong> <%= f.label :terminada, tarea.nombre %></strong>
+   <%= link_to "(remove)", tarea, method: :delete,remote: true, data: {confirm: "Are you sure?"} %>
+</div>
+<% end %>

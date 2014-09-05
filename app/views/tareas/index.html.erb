@@ -1,0 +1,14 @@
+<%= link_to 'New Tarea', new_tarea_path, id: "new_link",remote: true,
+data: {disable_with: '<i class="fa fa-spinner fa-spin"></i> Cargando...'} %>
+
+<h1>Listado de Tareas</h1>
+
+<h2> Tareas: </h2>
+<div id="tareas" class="tareas">
+	<%= render @tareas %>
+</div>
+
+<h2> Tareas Terminadas </h2>
+<div id="completas" class="completas">
+	<%= render @tareasterminadas %>
+</div>
