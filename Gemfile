@@ -43,6 +43,9 @@ group :development do
   gem "binding_of_caller"
   gem 'meta_request'
   gem 'pry-rails'
+  gem 'capistrano'
+  gem 'capistrano-rails'
 end
 
 gem "font-awesome-rails"
+gem 'unicorn'
